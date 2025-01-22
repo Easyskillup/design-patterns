@@ -1,4 +1,4 @@
-package visitor;
+package com.example.visitor;
 
 /**
  * Element - Defines an accept method that takes a Visitor as an argument
