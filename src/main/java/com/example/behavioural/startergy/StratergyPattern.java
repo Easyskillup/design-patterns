@@ -3,14 +3,14 @@ package com.example.behavioural.startergy;
 /**
  * Startergy interface
  */
-interface PaymentStartergy {
+interface PaymentStratergy {
   void pay(double amount);
 }
 
 /**
  * Concrete startergy implementations
  */
-class CreditCardPayment implements PaymentStartergy {
+class CreditCardPayment implements PaymentStratergy {
 
   private final String cardNumber;
 
@@ -24,7 +24,7 @@ class CreditCardPayment implements PaymentStartergy {
   }
 }
 
-class PayPalPayment implements PaymentStartergy {
+class PayPalPayment implements PaymentStratergy {
 
   private final String payPalId;
 
@@ -43,20 +43,20 @@ class PayPalPayment implements PaymentStartergy {
  */
 class PaymentContext {
 
-  private PaymentStartergy paymentStartergy;
+  private PaymentStratergy paymentStratergy;
 
   public PaymentContext(){}
 
-  public PaymentContext(PaymentStartergy paymentStartergy) {
-    this.paymentStartergy = paymentStartergy;
+  public PaymentContext(PaymentStratergy paymentStratergy) {
+    this.paymentStratergy = paymentStratergy;
   }
 
-  public void setPaymentStartergy(PaymentStartergy paymentStartergy) {
-    this.paymentStartergy = paymentStartergy;
+  public void setPaymentStratergy(PaymentStratergy paymentStratergy) {
+    this.paymentStratergy = paymentStratergy;
   }
 
   public void pay(double amount) {
-    paymentStartergy.pay(amount);
+    paymentStratergy.pay(amount);
   }
 
 }
@@ -66,13 +66,13 @@ public class StratergyPattern {
     
     PaymentContext context = new PaymentContext();
 
-    PaymentStartergy crediCard = new CreditCardPayment("12344");
-    PaymentStartergy payPal = new PayPalPayment("Paypal01");
+    PaymentStratergy crediCard = new CreditCardPayment("12344");
+    PaymentStratergy payPal = new PayPalPayment("Paypal01");
 
-    context.setPaymentStartergy(crediCard);
+    context.setPaymentStratergy(crediCard);
     context.pay(1234.00);
     
-    context.setPaymentStartergy(payPal);
+    context.setPaymentStratergy(payPal);
     context.pay(1224.00);
 
   }

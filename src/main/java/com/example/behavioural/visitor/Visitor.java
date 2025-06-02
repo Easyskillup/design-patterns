@@ -11,7 +11,7 @@ public interface Visitor {
 }
 
 /**
- * Concrete Visitor - implementation of the Visitor and defines seperate
+ * Concrete Visitor - implementation of the Visitor and defines separate
  * operations
  */
 class DrawingVisitor implements Visitor {

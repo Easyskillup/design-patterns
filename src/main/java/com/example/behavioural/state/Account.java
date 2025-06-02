@@ -1,6 +1,6 @@
 package com.example.behavioural.state;
 
-// Context class, pocesses a defualt state
+// Context class, processes a default state
 public class Account {
 
   private String name;
