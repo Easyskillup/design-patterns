@@ -1,4 +1,4 @@
-package com.example.state;
+package com.example.behavioural.state;
 
 // Context class, pocesses a defualt state
 public class Account {

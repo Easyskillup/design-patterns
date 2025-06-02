@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.structural.decorator;
 
 // Standard implementation of the component interface
 public class StandardAccount implements BankAccount {

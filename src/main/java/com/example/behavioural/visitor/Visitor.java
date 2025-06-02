@@ -1,4 +1,4 @@
-package com.example.visitor;
+package com.example.behavioural.visitor;
 
 /**
  * Visitor - interface that defines the mthods that needs to be visited

@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.structural.decorator;
 
 public class Main {
 
@@ -9,7 +9,7 @@ public class Main {
     account.deposit(100);
     System.out.println("Balance = " + account.getBalance());
     account.withdraw(1200);
-    System.out.println("Balanc eafter withdrawal = " + account.getBalance());
+    System.out.println("Balance after withdrawal = " + account.getBalance());
 
     // System.out.println();
     // account = new InterestDecorator(account, 5.0);

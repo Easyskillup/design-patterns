@@ -1,4 +1,4 @@
-package com.example.state;
+package com.example.behavioural.state;
 
 public interface AccountState {
   void deposit(Account account, double amount);

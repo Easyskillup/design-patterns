@@ -1,4 +1,4 @@
-package com.example.visitor;
+package com.example.behavioural.visitor;
 
 import java.util.List;
 

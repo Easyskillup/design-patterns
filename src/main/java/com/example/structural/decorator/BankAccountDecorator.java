@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.structural.decorator;
 
 public abstract class BankAccountDecorator implements BankAccount {
 

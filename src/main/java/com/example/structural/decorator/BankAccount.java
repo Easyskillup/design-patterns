@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.structural.decorator;
 
 // Componenet interface
 public interface BankAccount {

@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.structural.decorator;
 
 public class OverdraftDecorator extends BankAccountDecorator {
 

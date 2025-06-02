@@ -1,4 +1,4 @@
-package com.example.visitor;
+package com.example.behavioural.visitor;
 
 /**
  * Element - Defines an accept method that takes a Visitor as an argument
